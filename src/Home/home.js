@@ -22,9 +22,9 @@ class home extends Component {
                 backgroundSize: "cover",
                 }}
               ></div>
-              {/* <About/> */}
+              <About/>
               <Gallery/>
-              <Team/>
+              {/* <Team/> */}
               <div  style={{  backgroundImage: `url(${require('../images/table2.png')})`, }}>
               <Review/>
               </div>
