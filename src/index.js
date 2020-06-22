@@ -6,7 +6,7 @@ import HomeComponent from './Home/home';
 
 const routing =(
   <Router>
-    <div id="routing-container">
+    <div id="routing-container" style={{position:'absolute',left:'0px'}}>
       <Route path='/' component={HomeComponent}></Route>
     </div>
   </Router>

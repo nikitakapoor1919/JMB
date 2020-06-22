@@ -1,22 +1,19 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import NavStyle from './styles';
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
+import RateReviewIcon from '@material-ui/icons/RateReview';
 
 const navLinks = [
   {
-    img: 'https://i.postimg.cc/QNPtzZKK/Home-icon.png',
-    url: '/',
-    name: 'Home',
+    img: <RateReviewIcon/>,
+    url: 'https://www.facebook.com/pg/jmb.co.in/reviews/?ref=page_internal',
+    name: 'Reviews',
   },
   {
-    img: 'https://i.postimg.cc/5y3MbvNt/Blog-icon.png',
+    img: <ContactPhoneIcon/>,
     url: '/',
-    name: 'Blogs',
-  },
-  {
-    img: 'https://i.postimg.cc/jdgGcRDB/Help-icon.png',
-    url: '/faq',
-    name: 'Help and FAQ',
+    name: 'Contact Us',
   },
 ];
 class Nav extends React.Component {
@@ -27,47 +24,35 @@ class Nav extends React.Component {
     };
   }
 
-  handleClick = () => {
-    switch (this.state.status) {
-      case false:
-        this.setState({
-          status: true,
-        });
-        // {
-        //   this.props.getStatus(1);
-        // }
-        break;
-      case true:
-        this.setState({
-          status: false,
-        });
-        // {
-        //   this.props.getStatus(0);
-        // }
-        break;
-    }
-  };
+  // handleClick = () => {
+  //   switch (this.state.status) {
+  //     case false:
+  //       this.setState({
+  //         status: true,
+  //       });
+  //       break;
+  //     case true:
+  //       this.setState({
+  //         status: false,
+  //       });
+  //       break;
+  //   }
+  // };
 
-  closeClick = () => {
-    switch (this.state.status) {
-      case false:
-        this.setState({
-          status: true,
-        });
-        // {
-        //   this.props.getStatus(1);
-        // }
-        break;
-      case true:
-        this.setState({
-          status: false,
-        });
-        // {
-        //   this.props.getStatus(0);
-        // }
-        // break;
-    }
-  };
+  // closeClick = () => {
+  //   switch (this.state.status) {
+  //     case false:
+  //       this.setState({
+  //         status: true,
+  //       });
+  //       break;
+  //     case true:
+  //       this.setState({
+  //         status: false,
+  //       });
+  //       break;
+  //   }
+  // };
   render() {
     const { classes } = this.props;
     return this.state.status ? (
@@ -75,20 +60,19 @@ class Nav extends React.Component {
         <div className={classes.wrap}>
           <div className={classes.topNav}>
             <div>
-              <span className={classes.togglebtn} onClick={this.handleClick}>
-                <img src="https://i.postimg.cc/fL7P99SQ/Hamburger.png"></img>
+              <span className={classes.togglebtn} >
+                <img src="https://i.postimg.cc/5tKr3BLp/JMB.png"></img>
               </span>
             </div>
           </div>
           <div className={classes.menu}>
             <ul className={classes.list}>
-              <div className={classes.logo}>
-                <img src="https://i.postimg.cc/V6tCGssg/logo.png"></img>
-              </div>
               {navLinks.map(({ img, url, name }) => (
                 <li className={classes.listItem}>
                   <a className={classes.link} href={url}>
-                    <img style={{marginTop:'10px'}} src={img}></img>
+                     <span  style={{position:'relative',top:'7px'}}>
+                     {img}
+                     </span>
                     <span className={classes.name}>{name}</span>
                   </a>
                 </li>
@@ -100,9 +84,12 @@ class Nav extends React.Component {
     ) : (
       <div className={classes.topNav}>
         <div>
-          <span className={classes.togglebtn} onClick={this.handleClick}>
+              <span className={classes.togglebtn} >
+                <img src="https://i.postimg.cc/5tKr3BLp/JMB.png"></img>
+              </span>
+          {/* <span className={classes.togglebtn} onClick={this.handleClick}>
             <img src="https://i.postimg.cc/fL7P99SQ/Hamburger.png"></img>
-          </span>
+          </span> */}
         </div>
       </div>
     );

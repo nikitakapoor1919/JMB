@@ -2,19 +2,34 @@ import React, { Component } from 'react'
 import Nav from '../component/NavBar/Nav'
 import withStyles from '@material-ui/core/styles/withStyles';
 import HomeStyle from './styles';
-import Grid from '@material-ui/core/Grid';
+import Footer from '../component/Footer/footer';
+import About from '../component/About/About'
+import Gallery from '../component/ImageGallery/images'
+import Review from '../component/Review/review'
+import Team from '../component/Owners/Team'
 
 class home extends Component {
     render() {
       const {classes}=this.props
         return (
-          <div>
+          <div style={{overflowX:'hidden'}}>
               <Nav/>
-              <Grid container spacing={3} className={classes.root}>
-                <Grid item xs={12}>
-                   <div className={classes.heading} >Select what you're into. We'll help you find great things to read.</div>
-                </Grid>
-              </Grid>
+              <div
+                className={classes.img}
+                style={{
+                backgroundImage: `url(${require('../images/landing4.png')})`,
+                backgroundPosition: "right",
+                backgroundSize: "cover",
+                }}
+              ></div>
+              {/* <img src={require('../images/landingpage.png')} className={classes.img}/> */}
+              <About/>
+              <Gallery/>
+              <Team/>
+              <div  style={{  backgroundImage: `url(${require('../images/table2.png')})`, }}>
+              <Review/>
+              </div>
+              <Footer/>
           </div>
         )
     }

@@ -10,6 +10,14 @@ const HomeStyle = {
     root:{
         background: '#252626',
         color: 'white'
+    },
+    img:{
+        width:'100%',
+        marginTop:'50px',
+        height:'500px',
+        '@media screen and (max-width: 1024px)': {
+            height:'500px'
+        },
     }
   };
   
