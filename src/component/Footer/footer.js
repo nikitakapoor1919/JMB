@@ -41,8 +41,8 @@ function Footer() {
 		<div className="footer-icons">
  
 		<a href="https://www.facebook.com/jmb.co.in/"><FacebookIcon style={{position:'relative',top:'5px'}}/></a>
-		<a href="#"><TwitterIcon style={{position:'relative',top:'5px'}}/></a>
-		<a href="#"><LinkedInIcon style={{position:'relative',top:'5px'}}/></a>
+		<a href="# "><TwitterIcon style={{position:'relative',top:'5px'}}/></a>
+		<a href="# "><LinkedInIcon style={{position:'relative',top:'5px'}}/></a>
 		<a href="https://github.com/nikitakapoor1919/MyBlog"><GitHubIcon style={{position:'relative',top:'5px'}}/></a>
  
 		</div>
