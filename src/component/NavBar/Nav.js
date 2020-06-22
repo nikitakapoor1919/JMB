@@ -61,7 +61,7 @@ class Nav extends React.Component {
           <div className={classes.topNav}>
             <div>
               <span className={classes.togglebtn} >
-                <img src="https://i.postimg.cc/5tKr3BLp/JMB.png"></img>
+                <img src="https://i.postimg.cc/5tKr3BLp/JMB.png" alt='...'></img>
               </span>
             </div>
           </div>
@@ -85,7 +85,7 @@ class Nav extends React.Component {
       <div className={classes.topNav}>
         <div>
               <span className={classes.togglebtn} >
-                <img src="https://i.postimg.cc/5tKr3BLp/JMB.png"></img>
+                <img src="https://i.postimg.cc/5tKr3BLp/JMB.png"  alt='...'></img>
               </span>
           {/* <span className={classes.togglebtn} onClick={this.handleClick}>
             <img src="https://i.postimg.cc/fL7P99SQ/Hamburger.png"></img>

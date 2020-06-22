@@ -6,7 +6,7 @@ import Footer from '../component/Footer/footer';
 import About from '../component/About/About'
 import Gallery from '../component/ImageGallery/images'
 import Review from '../component/Review/review'
-import Team from '../component/Owners/Team'
+// import Team from '../component/Owners/Team'
 
 class home extends Component {
     render() {
