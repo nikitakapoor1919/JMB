@@ -19,7 +19,13 @@ const teamStyle = {
     marginLeft: "auto",
     marginRight: "auto"
   },
-//   cardTitle,
+   cardTitle:{
+    fontSize: '1.125rem',
+    lineHeight: '1.5em',
+    fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
+    fontWeight: '300',
+    lineHeight: '1.5'
+   },
   smallTitle: {
     color: "#6c757d"
   },

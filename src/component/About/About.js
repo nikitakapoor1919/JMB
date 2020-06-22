@@ -14,7 +14,7 @@ const styles = (theme) => ({
     marginTop:'20px',
     display: 'flex',
     overflow: 'hidden',
-    backgroundColor: '#f5f3f3',
+    backgroundColor: '#de464624',
     height:'70vh',
     '@media screen and (max-width: 1024px)': {
         height:'1000px'
@@ -70,7 +70,7 @@ function ProductValues(props) {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-             <InfoIcon style={{fontSize:'55px',color:'green'}}/>
+             <InfoIcon style={{fontSize:'55px'}}/>
               <Typography variant="h6" className={classes.title}>
                Description
               </Typography>
@@ -81,7 +81,7 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-            <StarsIcon style={{fontSize:'55px',color:'orange'}}/>
+            <StarsIcon style={{fontSize:'55px'}}/>
               <Typography variant="h6" className={classes.title}>
                 Quality
               </Typography>
