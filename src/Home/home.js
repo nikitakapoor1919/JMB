@@ -22,7 +22,6 @@ class home extends Component {
                 backgroundSize: "cover",
                 }}
               ></div>
-              <img src={require('../images/landingpage.png')} className={classes.img}/>
               {/* <About/> */}
               <Gallery/>
               <Team/>
